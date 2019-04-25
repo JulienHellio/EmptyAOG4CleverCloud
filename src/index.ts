@@ -8,7 +8,8 @@ import {
   helpIntent,
   welcomeIntent,
   byeIntent,
-  weshIntent
+  weshIntent,
+  resultFootIntent
 } from './default/base.intent';
 
 const express = require('express');
@@ -27,5 +28,7 @@ app.intent('Goodbye', byeIntent)
 app.intent('Help', helpIntent)
 
 app.intent('Wesh', weshIntent)
+
+app.intent('resultFoot', resultFootIntent)
 
 express().use(bodyParser.json(), app).listen(8080);

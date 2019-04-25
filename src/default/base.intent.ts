@@ -18,3 +18,7 @@ export const byeIntent = (conv: DialogflowConversation) => {
 export const weshIntent = (conv: DialogflowConversation) => {
     conv.ask(messages.wesh);
 }
+
+export const resultFootIntent = (conv: DialogflowConversation) => {
+    conv.ask(messages.resultFoot);
+}
